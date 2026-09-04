@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#9b5de5" />
+
+  <title>Feliz cumpleaños 💜</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Fondo decorativo -->
+  <div class="background-effects" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <div id="stars"></div>
+  </div>
+
+  <!-- Pantalla inicial -->
+  <section class="hero" id="inicio">
+  <div class="hero-number-bg" id="heroNumberBg" aria-hidden="true">21</div>
+
+  <div class="hero-card reveal">
+      <p class="eyebrow">Un detalle hecho especialmente para ti ✨</p>
+
+      <h1>
+        Feliz cumpleaños,
+        <span id="birthdayName">Valentina</span> 💜
+      </h1>
+
+      <p class="hero-age">
+        Hoy celebramos tus
+        <strong id="birthdayAge">21</strong>
+        años 🎂
+      </p>
+
+      <p class="hero-text">
+        Aunque hoy estés lejos de casa, hay personas que siguen pensando en ti,
+        celebrándote y acompañándote desde la distancia.
+      </p>
+
+      <button class="primary-button" id="openButton">
+        Abrir mi sorpresa 🎁
+      </button>
+
+      <p class="small-note">
+        Consejo: activa el sonido para disfrutar los mensajes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contenido principal -->
+  <main id="content" class="hidden-content">
+
+    <!-- Mensaje principal -->
+    <section class="section intro-section reveal">
+      <div class="section-heading">
+        <span class="section-kicker">Para ti</span>
+        <h2>Una pequeña forma de estar cerca 💌</h2>
+      </div>
+
+      <div class="letter-card">
+        <p>
+          Hoy quizá haya kilómetros de por medio, una zona horaria distinta
+          y muchas cosas nuevas a tu alrededor. Pero nada de eso cambia lo
+          importante: hay gente que te quiere, te recuerda y desea que este
+          nuevo año de vida esté lleno de momentos bonitos.
+        </p>
+
+        <p>
+          Que estos 21 lleguen con nuevas experiencias, amigos, viajes,
+          aprendizajes y muchas razones para sonreír. Y que cuando extrañes
+          casa, puedas volver a esta página y escuchar algunas voces conocidas.
+        </p>
+
+        <p class="signature">
+          Con muchísimo cariño 💜
+        </p>
+      </div>
+    </section>
+
+    <!-- Mensajes -->
+    <section class="section reveal" id="mensajes">
+      <div class="section-heading">
+        <span class="section-kicker">Mensajes</span>
+        <h2>Palabras que viajaron hasta ti 🌎</h2>
+        <p>
+          Puedes agregar tantos mensajes como quieras desde <code>script.js</code>.
+        </p>
+      </div>
+
+      <div class="cards-grid" id="messagesContainer"></div>
+    </section>
+
+    <!-- Audios -->
+    <section class="section reveal" id="audios">
+      <div class="section-heading">
+        <span class="section-kicker">Audios</span>
+        <h2>Voces que seguramente reconoces 🎧</h2>
+        <p>
+          Guarda tus archivos de audio dentro de
+          <code>assets/audio/</code>.
+        </p>
+      </div>
+
+      <div class="media-grid" id="audioContainer"></div>
+    </section>
+
+    <!-- Videos -->
+    <section class="section reveal" id="videos">
+      <div class="section-heading">
+        <span class="section-kicker">Videos</span>
+        <h2>Saludos que cruzaron la distancia 🎥</h2>
+        <p>
+          Guarda tus videos en <code>assets/video/</code>.
+        </p>
+      </div>
+
+      <div class="video-grid" id="videoContainer"></div>
+    </section>
+
+    <!-- Galería -->
+    <section class="section reveal" id="fotos">
+      <div class="section-heading">
+        <span class="section-kicker">Recuerdos</span>
+        <h2>Un poquito de casa en fotografías 📸</h2>
+        <p>
+          Haz clic sobre cualquier foto para verla más grande.
+        </p>
+      </div>
+
+      <div class="gallery-grid" id="galleryContainer"></div>
+    </section>
+
+    <!-- Cierre -->
+    <section class="section ending-section reveal">
+      <div class="ending-card">
+        <p class="ending-emoji">🎂 ✨ 💜</p>
+        <h2>Que este nuevo capítulo sea inolvidable</h2>
+        <p>
+          Estés donde estés, sigue disfrutando, aprendiendo y construyendo
+          historias que algún día vas a contar con una sonrisa.
+        </p>
+
+        <button class="secondary-button" id="confettiButton">
+          Lanzar confeti 🎉
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal para fotografías -->
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <button class="modal-close" id="closeModal" aria-label="Cerrar imagen">
+      ×
+    </button>
+    <img id="modalImage" src="" alt="Fotografía ampliada" />
+  </div>
+
+  <!-- Contenedor de confeti -->
+  <div id="confettiContainer" aria-hidden="true"></div>
+
+  <footer>
+    <p>Hecho con cariño, código y un poquito de magia ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
